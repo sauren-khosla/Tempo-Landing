@@ -4,18 +4,18 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const firstNameInput = document.querySelector('#first-name');
-  const firstName = firstNameInput.value;
+  const firstNameValue = firstNameInput.value;
 
   const lastNameInput = document.querySelector('#last-name');
-  const lastName = lastNameInput.value;
+  const lastNameValue = lastNameInput.value;
 
   const emailInput = document.querySelector('#email');
-  const email = emailInput.value;
+  const emailValue = emailInput.value;
 
   const data = {
-    firstName,
-    lastName,
-    email,
+    firstName: firstNameValue,
+    lastName: lastNameValue,
+    email: emailValue,
   };
 
   fetch('https://us-west1-tempo-4c412.cloudfunctions.net/add-to-waitlist', {
