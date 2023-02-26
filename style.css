@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Aeonik';
+  src: url('assets/AeonikTRIAL.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Aeonik', sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+}
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-top: auto;
+}
+
+.logo-image {
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.middle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.tagline {
+  font-size: 26px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+label {
+  display: flex;
+  font-size: 22px;
+  color: white;
+  justify-content: center;
+  align-content: center;
+}
+
+input[type="email"] {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
