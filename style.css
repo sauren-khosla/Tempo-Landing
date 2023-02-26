@@ -35,7 +35,6 @@ form {
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin-top: auto;
 }
 
 .logo-image {
@@ -49,14 +48,12 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
 }
 
 .tagline {
   font-size: 26px;
   color: white;
   margin-top: 0;
-  margin-bottom: 50px;
 }
 
 label {
@@ -76,7 +73,6 @@ input[type="email"] {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 5%;
-  margin-top: 10%;
 }
 
 button[type="submit"] {
@@ -91,4 +87,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #555;
+}
+
+.name-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }

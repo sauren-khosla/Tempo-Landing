@@ -14,11 +14,16 @@
       <img src="assets/logo_t.png" alt="Tempo Logo" class="logo-image">
       <p class="tagline">We're taking social media back to its roots.</p>
       <form>
-        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <div class="name-inputs">
+          <input type="text" id="first-name" name="first-name" required placeholder="First Name" style="width: 48%;">
+          <input type="text" id="last-name" name="last-name" required placeholder="Last Name" style="width: 48%;">
+        </div>
+        <input type="email" id="email" name="email" required placeholder="Email">
         <button type="submit">Join the Waitlist</button>
       </form>
     </div>
   </main>
+  <script src="https://apis.google.com/js/api.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
