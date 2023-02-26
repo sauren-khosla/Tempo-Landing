@@ -89,6 +89,11 @@ button[type="submit"]:hover {
   background-color: #555;
 }
 
+button[type="submit"].disabled:hover {
+  background-color: #333;
+  cursor: unset;
+}
+
 .name-inputs {
   display: flex;
   justify-content: space-between;
@@ -102,4 +107,31 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .tagline {
+    font-size: 14px;
+  }
+
+  .logo-image {
+    max-width: 20%;
+  }
+
+  .name-inputs {
+    max-height: 25%;
+  }
+
+  input[type="text"] {
+    font-size: 12px;
+  }
+
+  input[type="email"] {
+    font-size: 12px;
+    max-height: 25%;
+  }
+
+  button[type="submit"] {
+    font-size: 12px;
+  }
 }
