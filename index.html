@@ -48,6 +48,22 @@
           <input type="text" id="last-name" name="last-name" required placeholder="Last Name" style="width: 48%;">
         </div>
         <input type="email" id="email" name="email" required placeholder="Email">
+        <p class="hear-text">How did you hear about us?</p>
+        <select id="source" name="source" required>
+          <option class="select-one" value="" disabled selected hidden>Select one</option>
+          <option value="word_of_mouth">Word of Mouth</option>
+          <option value="reddit">Reddit</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <!-- Add the instruction and three text boxes for friend referrals -->
+        <p class="referral-instruction">Optionally, enter the names of three friends you'd like to join the app with and if they all sign up, you'll all be taken off the waitlist instantly.</p>
+        <div class="referral-inputs">
+          <input type="text" id="friend-1" name="friend-1" placeholder="Friend's Full Name">
+          <input class="friends" type="text" id="friend-2" name="friend-2" placeholder="Friend's Full Name">
+          <input type="text" id="friend-3" name="friend-3" placeholder="Friend's Full Name">
+        </div>
         <button type="submit">Join the Waitlist</button>
       </form>
     </div>
