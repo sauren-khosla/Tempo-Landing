@@ -8,7 +8,6 @@
 body {
   font-family: 'Aeonik', sans-serif;
   overflow-x: hidden;
-  height: 100vh;
   display: flex;
 }
 
@@ -46,10 +45,9 @@ main {
   position: relative;
   max-width: 100%;
   padding: 20px;
-  padding-top: 100px;
   padding-bottom: 100px;
+  padding-top: 100px;
   box-sizing: border-box;
-  height: 100%;
 }
 
 .tagline {
