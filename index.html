@@ -42,32 +42,16 @@
     <div class="middle-content">
       <img src="assets/logo_t.png" alt="Tempo Logo" class="logo-image">
       <p class="tagline">We're taking social media back to its roots.</p>
-      <form action="https://us-west1-tempo-4c412.cloudfunctions.net/add-to-waitlist" method="POST">
-        <div class="name-inputs">
-          <input type="text" id="first-name" name="first-name" required placeholder="First Name" style="width: 48%;">
-          <input type="text" id="last-name" name="last-name" required placeholder="Last Name" style="width: 48%;">
-        </div>
-        <input type="email" id="email" name="email" required placeholder="Email">
-        <p class="hear-text">How did you hear about us?</p>
-        <select id="source" name="source" required>
-          <option class="select-one" value="" disabled selected hidden>Select one</option>
-          <option value="word_of_mouth">Word of Mouth</option>
-          <option value="reddit">Reddit</option>
-          <option value="linkedin">LinkedIn</option>
-          <option value="other">Other</option>
-        </select>
-        
-        <!-- Add the instruction and three text boxes for friend referrals -->
-        <p class="referral-instruction">Optionally, enter the names of three friends you'd like to join the app with and if they all sign up, you'll all be taken off the waitlist instantly.</p>
-        <div class="referral-inputs">
-          <input type="text" id="friend-1" name="friend-1" placeholder="Friend's Full Name">
-          <input class="friends" type="text" id="friend-2" name="friend-2" placeholder="Friend's Full Name">
-          <input type="text" id="friend-3" name="friend-3" placeholder="Friend's Full Name">
-        </div>
-        <button type="submit">Join the Waitlist</button>
-      </form>
+      <a href="https://apps.apple.com/" target="_blank" class="app-store-button">Download Tempo on the App Store</a>
+      <a href="info.html" class="info-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+      </a>
+      <p class="student-count">100+ Stanford students have already signed up!</p>
     </div>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>

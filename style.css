@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Aeonik', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   display: flex;
 }
@@ -29,17 +29,9 @@ main {
   flex: 1;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-}
-
 .logo-image {
   max-width: 15%;
-  height: auto;
+  height: 45%;
   margin-bottom: 20px;
 }
 
@@ -50,102 +42,65 @@ form {
   align-items: center;
 }
 
+
+.middle-content-scrollable {
+  position: relative;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100%;
+}
+
 .tagline {
   font-size: 26px;
   color: white;
   margin-top: 0;
 }
 
-label {
-  display: flex;
-  font-size: 22px;
+.student-count {
+  font-size: 18px;
   color: white;
-  justify-content: center;
-  align-content: center;
+  margin-top: 20px;
 }
 
-input[type="email"] {
-  width: 56%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-select {
-  width: 56%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-bottom: 5%;
-}
-
-input[type="email"],
-select {
-  margin-bottom: 2.5%;
-}
-
-.referral-instruction {
-  font-size: 16px;
+.app-store-button {
+  display: inline-block;
+  background-color: #4a4a4a;
   color: white;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.referral-inputs {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5%;
-}
-
-button[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  border: none;
+  text-decoration: none;
   padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: #555;
+.app-store-button:hover {
+  background-color: #333333;
 }
 
-button[type="submit"].disabled:hover {
-  background-color: #333;
-  cursor: unset;
-}
-
-.name-inputs {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2.5%;
-}
-
-input[type="text"] {
-  width: 50%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.select-one {
-  color: grey;
-}
-
-.hear-text {
+.info-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   color: white;
+  text-decoration: none;
 }
 
-.friends {
-  margin-left: 2%;
-  margin-right: 2%;
+.info-text {
+  color: white;
+  max-width: 50%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
@@ -153,36 +108,20 @@ input[type="text"] {
     font-size: 14px;
   }
 
+  .student-count {
+    font-size: 12px;
+  }
+
   .logo-image {
     max-width: 20%;
   }
 
-  .name-inputs {
-    max-height: 25%;
+  .app-store-button {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 
-  input[type="text"] {
-    font-size: 12px;
-  }
-
-  input[type="email"] {
-    font-size: 12px;
-    max-height: 25%;
-  }
-
-  button[type="submit"] {
-    font-size: 12px;
-  }
-
-  select {
-    font-size: 12px;
-  }
-
-  .referral-instruction {
-    font-size: 12px;
-  }
-
-  input[type="text"] {
-    font-size: 12px;
+  .info-text {
+    max-width: 90%;
   }
 }
