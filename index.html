@@ -33,35 +33,6 @@
   <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport" >
 
   <link rel="stylesheet" href="style.css">
-
-  <script>
-    document.addEventListener('touchmove', function (e) {
-      e.preventDefault();
-    }, { passive: false });
-  
-    document.addEventListener('DOMContentLoaded', function () {
-      const scrollable = document.querySelector('.middle-content');
-      scrollable.addEventListener('touchstart', function (e) {
-        if (scrollable.scrollHeight > scrollable.clientHeight) {
-          const top = scrollable.scrollTop;
-          const totalScroll = scrollable.scrollHeight;
-          const currentScroll = top + scrollable.offsetHeight;
-  
-          if (top === 0) {
-            scrollable.scrollTop = 1;
-          } else if (currentScroll === totalScroll) {
-            scrollable.scrollTop = top - 1;
-          }
-        }
-      }, { passive: false });
-  
-      scrollable.addEventListener('touchmove', function (e) {
-        if (scrollable.scrollHeight > scrollable.clientHeight) {
-          e.stopPropagation();
-        }
-      }, { passive: false });
-    });
-  </script>  
   
 </head>
 <body>
