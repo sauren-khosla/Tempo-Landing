@@ -30,8 +30,8 @@ main {
 }
 
 .logo-image {
-  max-width: 15%;
-  height: 45%;
+  width: 100px;
+  height: 100px;
   margin-bottom: 20px;
 }
 
@@ -110,10 +110,6 @@ main {
 
   .student-count {
     font-size: 12px;
-  }
-
-  .logo-image {
-    max-width: 20%;
   }
 
   .app-store-button {
