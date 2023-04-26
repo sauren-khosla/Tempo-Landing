@@ -62,6 +62,17 @@ main {
   margin-top: 20px;
 }
 
+.TOS_Privacy_Policy {
+  font-size: 12px;
+  color: white;
+  margin-top: 50px;
+}
+
+.TOS_Privacy_Policy a {
+  color: orange;
+  text-decoration: none;
+}
+
 .app-store-button {
   display: inline-block;
   background-color: #4a4a4a;
