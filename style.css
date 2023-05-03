@@ -28,6 +28,11 @@ main {
   flex: 1;
 }
 
+.tagline-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo-image {
   width: 100px;
   height: 100px;
@@ -65,7 +70,7 @@ main {
 .TOS_Privacy_Policy {
   font-size: 12px;
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .TOS_Privacy_Policy a {
@@ -88,11 +93,23 @@ main {
   background-color: #333333;
 }
 
-.info-icon {
+.back-icon {
   position: absolute;
   top: 15px;
   right: 15px;
   color: white;
+  text-decoration: none;
+}
+
+.FAQ {
+  color: orange;
+  text-decoration: none;
+}
+
+.info-icon {
+  color: orange;
+  margin-bottom: 20px;
+  margin-left: 5px;
   text-decoration: none;
 }
 
