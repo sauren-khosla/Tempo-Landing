@@ -146,4 +146,10 @@ main {
   .info-text {
     max-width: 90%;
   }
+
+  .info-icon svg {
+    margin-left: -3px;
+    width: 14px;
+    height: 14px;
+  }
 }
